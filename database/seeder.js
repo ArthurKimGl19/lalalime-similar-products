@@ -864,7 +864,7 @@ const createPants = (name) => {
 
 const bottomProducts = () => {
   let botProductsArr = [];
-  for (let i = 0; i < 20; i++) {
+  for (let i = 0; i < 4; i++) {
     botProductsArr.push(createShorts(name));
     botProductsArr.push(createPants(name));
     botProductsArr.push(createSkirts(name));
@@ -874,7 +874,7 @@ const bottomProducts = () => {
 
 const topProducts = () => {
   let topProductsArr = [];
-  for (let i = 0; i < 20; i++) {
+  for (let i = 0; i < 4; i++) {
     topProductsArr.push(createDresses(name));
     topProductsArr.push(createTanks(name));
     topProductsArr.push(createSweaters(name));
@@ -887,7 +887,6 @@ const combineProducts = () => {
   let topData = topProducts()
   return [...bottData, ...topData];
 }
-
 
 // seeding data
 const insertData = () => {
