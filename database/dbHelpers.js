@@ -3,23 +3,23 @@ const LalaLime = require('./index.js');
 const getProducts = () => {
   return LalaLime.find({property:'bottom'});
 }
-const getOneProduct = (_id) => {
-  return LalaLime.find({_id});
+const getOneProduct = (productId) => {
+  return LalaLime.find({productId});
 }
 const postOneProduct = (property, type, title, price, img) => {
   return LalaLime.create({
     property, type, title, price, img
   })
 }
-const updateOneProduct = (_id, property, type, title, price, img) => {
+const updateOneProduct = (productId, property, type, title, price, img) => {
   return LalaLime.findByIdAndUpdate(
-    _id, {
+    productId, {
         property, type, title, price, img
     }
   )
 }
-const deleteOneProduct = (_id) => {
-  return LalaLime.findByIdAndDelete({_id})
+const deleteOneProduct = (productId) => {
+  return LalaLime.findByIdAndDelete({productId})
 }
 module.exports = 
 { getProducts,

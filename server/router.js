@@ -8,7 +8,7 @@ router
   .get(controller.getAll)
 
 router
-  .route('/similar_products/byId/:_id')
+  .route('/similar_products/byId/:id')
     .get(controller.getOne)
     .put(controller.updateOne)
     .delete(controller.deleteOne)
