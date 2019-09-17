@@ -1,10 +1,11 @@
 const LalaLime = require('./index.js');
 
+
 const getProducts = () => {
   return LalaLime.find({property:'bottom'});
 }
-const getOneProduct = (productId) => {
-  return LalaLime.find({productId});
+const getOneProduct = (id) => {
+  return LalaLime.findOne({id})
 }
 const postOneProduct = (property, type, title, price, img) => {
   return LalaLime.create({
