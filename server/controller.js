@@ -18,8 +18,8 @@ const controller = {
     .catch((err) => res.status(400).send(err))
   },
   postOne: (req, res) => {
-    let { property, type, title, price, img } = req.body;
-    postOneProduct( property, type, title, price, img)
+    let { id, property, type, title, price, img } = req.body;
+    postOneProduct( id, property, type, title, price, img)
     .then(() => res.status(201).send('Post worked!'))
     .catch((err) => res.status(401).send(err))
   },

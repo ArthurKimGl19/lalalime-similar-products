@@ -7,20 +7,20 @@ const getProducts = () => {
 const getOneProduct = (id) => {
   return LalaLime.findOne({id})
 }
-const postOneProduct = (property, type, title, price, img) => {
+const postOneProduct = (id, property, type, title, price, img) => {
   return LalaLime.create({
-    property, type, title, price, img
+    id, property, type, title, price, img
   })
 }
-const updateOneProduct = (productId, property, type, title, price, img) => {
-  return LalaLime.findByIdAndUpdate(
-    productId, {
+const updateOneProduct = (id, property, type, title, price, img) => {
+  return LalaLime.findOneAndUpdate(
+    id, {
         property, type, title, price, img
     }
   )
 }
-const deleteOneProduct = (productId) => {
-  return LalaLime.findByIdAndDelete({productId})
+const deleteOneProduct = (id) => {
+  return LalaLime.findOneAndDelete({id})
 }
 module.exports = 
 { getProducts,

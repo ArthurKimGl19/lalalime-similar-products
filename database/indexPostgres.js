@@ -17,7 +17,7 @@ sequelize
     console.error('Unable to connect to the database:', err);
   });
 
-const Products = sequelize.define('products', {
+const Lalalime = sequelize.define('lalalime', {
   id: {
     type: Sequelize.INTEGER,
     primaryKey: true
@@ -42,10 +42,12 @@ const Products = sequelize.define('products', {
     timestamps: false
 })
 
-Products.sync({ force: false })
+Lalalime.sync({ force: false })
 .then(() => {
   console.log('db synced!');
 })
 .catch((err) => {
   console.log('db sync failed', err)
 })
+
+module.exports = Lalalime;
