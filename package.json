@@ -10,7 +10,7 @@
   "scripts": {
     "start": "nodemon server/index.js",
     "build": "webpack -d --watch",
-    "seed": "node database/seeder.js"
+    "seed": "node --max-old-space-size=6144 database/seeder.js"
   },
   "dependencies": {
     "axios": "^0.19.0",
@@ -20,11 +20,14 @@
     "mongodb": "^3.3.0",
     "mongoose": "^5.6.10",
     "nodemon": "^1.19.1",
+    "pg": "^7.12.1",
+    "pg-hstore": "^2.3.3",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
     "react-icons": "^3.7.0",
     "react-multi-carousel": "^2.2.5",
     "react-slick": "^0.25.2",
+    "sequelize": "^5.18.4",
     "style-loader": "^1.0.0",
     "webpack": "^4.39.2",
     "webpack-cli": "^3.3.7"

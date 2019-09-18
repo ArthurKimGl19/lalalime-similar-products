@@ -11,23 +11,25 @@ const dbHelpers = {
       }
      })
   },
-  postOneProduct: (property, type, title, price, img) => {
+  postOneProduct: (id, property, type, title, price, img) => {
     return Lalalime.create({
-      property, type, title, price, img
+      id, property, type, title, price, img
     })
   },
-  updateOneProduct: (productId, property, type, title, price, img) => {
+  updateOneProduct: (id, property, type, title, price, img) => {
     return Lalalime.update({ property, type, title, price, img }, {
       where: {
-        productId
+        id
       }
     })
   },
-  deleteOneProduct: (productId) => {
-    where: {
-      productId
+  deleteOneProduct: (id) => {
+    return Lalalime.destroy({
+      where: {
+      id
     }
-  }
+  })
+}
 }
 
 module.exports = dbHelpers;
