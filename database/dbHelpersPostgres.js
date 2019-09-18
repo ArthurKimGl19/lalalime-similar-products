@@ -5,7 +5,11 @@ const dbHelpers = {
     return Lalalime.findAll()
   },
   getOneProduct: (id) => {
-    return Lalalime.find({ id })
+    return Lalalime.findAll({
+      where: {
+        id
+      }
+     })
   },
   postOneProduct: (property, type, title, price, img) => {
     return Lalalime.create({

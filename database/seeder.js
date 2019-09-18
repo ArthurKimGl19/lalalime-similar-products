@@ -295,7 +295,7 @@ let counter = 0;
 //create 7000 shorts, 7000 pants, and 7000 skirts at a time
 const bottomProducts = () => {
   let botProductsArr = [];
-  for (let i = 0; i < 1; i++) {
+  for (let i = 0; i < 7000; i++) {
     botProductsArr.push(createShorts(name, counter));
     counter++;
     botProductsArr.push(createPants(name, counter));
@@ -308,7 +308,7 @@ const bottomProducts = () => {
 //create 7000 dresses, 7000 tanks, 7000 sweaters
 const topProducts = () => {
   let topProductsArr = [];
-  for (let i = 0; i < 1; i++) {
+  for (let i = 0; i < 7000; i++) {
     topProductsArr.push(createDresses(name, counter));
     counter++;
     topProductsArr.push(createTanks(name, counter));
@@ -352,7 +352,7 @@ const combineProducts = () => {
 // writeStream.end();
 
 //create csv file
-let writeStream = fs.createWriteStream('test2.csv');
+let writeStream = fs.createWriteStream('test1.csv');
 let counterPostGres = 0;
 
 let subStringValuesFunction = (array) => {
@@ -360,18 +360,18 @@ let subStringValuesFunction = (array) => {
   let values = Object.values(array);
   for (var k = 0; k < values.length; k++){
   //loop through each values and check if type is an object, if object it will stringify
-    if (typeof(values[k]) === 'object'){
-      substring += JSON.stringify(values[k]) + ',';
-    } else if (k === values.length - 1 ){
-      substring += values[k];
+    if (typeof(values[k]) === 'object' && k !== values.length - 1){
+      substring += JSON.stringify(values[k]) + '|';
+    } else if (k === values.length - 1){
+      substring += JSON.stringify(values[k]);
     } else {
-      substring += values[k] + ',';
+      substring += values[k] + '|';
     }         
   }
   return substring;
 }
 
-for (var i = 0; i < 2; i++) {
+for (var i = 0; i < 239; i++) {
   var data;
   let array = combineProducts();
   let keys;
@@ -381,9 +381,9 @@ for (var i = 0; i < 2; i++) {
     if (array[j]) {
       if (counterPostGres === 0){
         keys = Object.keys(array[0])
-        data = keys.join(',') + '\n' + subStringValuesFunction(array[0]) + '\n';
+        data = keys.join(',').replace(/,/g,'|') + '\n' + subStringValuesFunction(array[0]) + '\n';
         counterPostGres++;
-      } else if (i === 1 && j === array.length - 1) {
+      } else if (i === 238 && j === array.length - 1) {
         data = subStringValuesFunction(array[j])
       } else {
         data = subStringValuesFunction(array[j]) + '\n';

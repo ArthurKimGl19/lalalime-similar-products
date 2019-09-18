@@ -23,19 +23,19 @@ const Lalalime = sequelize.define('lalalime', {
     primaryKey: true
   },
   property: {
-    type: Sequelize.STRING
+    type: Sequelize.STRING(15)
   },
   type: {
-    type: Sequelize.STRING
+    type: Sequelize.STRING(15)
   },
   title: {
-    type: Sequelize.ARRAY(Sequelize.STRING)
+    type: Sequelize.STRING(90)
   },
   price: {
-    type: Sequelize.ARRAY(Sequelize.STRING)
+    type: Sequelize.STRING(70)
   },
   img: {
-    type: Sequelize.ARRAY(Sequelize.ARRAY(Sequelize.ARRAY(Sequelize.STRING)))
+    type: Sequelize.STRING(1500)
   }
 },
   {

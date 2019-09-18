@@ -3,7 +3,7 @@ const { getProducts,
 getOneProduct,
 postOneProduct,
 updateOneProduct,
-deleteOneProduct } = require('../database/dbHelpers.js');
+deleteOneProduct } = require('../database/dbHelpersPostgres.js');
 
 const controller = {
   getAll: (req, res) => {
