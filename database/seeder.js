@@ -31,34 +31,34 @@ const createDresses = (name, id) => {
   product.img = [
     [
       [
-        "color1",
-        "https://lalalime-similar.s3-us-west-1.amazonaws.com/dresses/Cinch+It+Dress/1.jpg",
-        "https://lalalime-similar.s3-us-west-1.amazonaws.com/dresses/Cinch+It+Dress/3.jpg",
-        "https://lalalime-similar.s3-us-west-1.amazonaws.com/dresses/Cinch+It+Dress/2.jpg"
+        'color1',
+        'https://lalalime-similar.s3-us-west-1.amazonaws.com/dresses/Cinch+It+Dress/1.jpg',
+        'https://lalalime-similar.s3-us-west-1.amazonaws.com/dresses/Cinch+It+Dress/3.jpg',
+        'https://lalalime-similar.s3-us-west-1.amazonaws.com/dresses/Cinch+It+Dress/2.jpg'
       ]
     ],
     [
       [
-        "color1",
-        "https://lalalime-similar.s3-us-west-1.amazonaws.com/dresses/Here+To+There+Dress/Black/1.jpg",
-        "https://lalalime-similar.s3-us-west-1.amazonaws.com/dresses/Here+To+There+Dress/Black/3.jpg",
-        "https://lalalime-similar.s3-us-west-1.amazonaws.com/dresses/Here+To+There+Dress/Black/2.jpg"
+        'color1',
+        'https://lalalime-similar.s3-us-west-1.amazonaws.com/dresses/Here+To+There+Dress/Black/1.jpg',
+        'https://lalalime-similar.s3-us-west-1.amazonaws.com/dresses/Here+To+There+Dress/Black/3.jpg',
+        'https://lalalime-similar.s3-us-west-1.amazonaws.com/dresses/Here+To+There+Dress/Black/2.jpg'
       ]
     ],
     [
       [
-        "color1",
-        "https://lalalime-similar.s3-us-west-1.amazonaws.com/dresses/Refresh+Maxi+Dress+II/Heathered+Black/1.jpg",
-        "https://lalalime-similar.s3-us-west-1.amazonaws.com/dresses/Refresh+Maxi+Dress+II/Heathered+Black/3.jpg",
-        "https://lalalime-similar.s3-us-west-1.amazonaws.com/dresses/Refresh+Maxi+Dress+II/Heathered+Black/2.jpg"
+        'color1',
+        'https://lalalime-similar.s3-us-west-1.amazonaws.com/dresses/Refresh+Maxi+Dress+II/Heathered+Black/1.jpg',
+        'https://lalalime-similar.s3-us-west-1.amazonaws.com/dresses/Refresh+Maxi+Dress+II/Heathered+Black/3.jpg',
+        'https://lalalime-similar.s3-us-west-1.amazonaws.com/dresses/Refresh+Maxi+Dress+II/Heathered+Black/2.jpg'
       ]
     ],
     [
       [
-        "color1",
-        "https://lalalime-similar.s3-us-west-1.amazonaws.com/dresses/Here+To+There+Dress/night-black/1.jpg",
-        "https://lalalime-similar.s3-us-west-1.amazonaws.com/dresses/Here+To+There+Dress/night-black/3.jpg",
-        "https://lalalime-similar.s3-us-west-1.amazonaws.com/dresses/Here+To+There+Dress/night-black/2.jpg"
+        'color1',
+        'https://lalalime-similar.s3-us-west-1.amazonaws.com/dresses/Here+To+There+Dress/night-black/1.jpg',
+        'https://lalalime-similar.s3-us-west-1.amazonaws.com/dresses/Here+To+There+Dress/night-black/3.jpg',
+        'https://lalalime-similar.s3-us-west-1.amazonaws.com/dresses/Here+To+There+Dress/night-black/2.jpg'
       ]
     ],
   ];
@@ -76,34 +76,34 @@ const createTanks = (name, id) => {
   product.img = [
     [
       [
-        "color1",
-        "https://lalalime-similar.s3-us-west-1.amazonaws.com/tanktops/Ebb+To+Street+Tank+II/Black/1.jpg",
-        "https://lalalime-similar.s3-us-west-1.amazonaws.com/tanktops/Ebb+To+Street+Tank+II/Black/3.jpg",
-        "https://lalalime-similar.s3-us-west-1.amazonaws.com/tanktops/Ebb+To+Street+Tank+II/Black/2.jpg"
+        'color1',
+        'https://lalalime-similar.s3-us-west-1.amazonaws.com/tanktops/Ebb+To+Street+Tank+II/Black/1.jpg',
+        'https://lalalime-similar.s3-us-west-1.amazonaws.com/tanktops/Ebb+To+Street+Tank+II/Black/3.jpg',
+        'https://lalalime-similar.s3-us-west-1.amazonaws.com/tanktops/Ebb+To+Street+Tank+II/Black/2.jpg'
       ]
     ],
     [
       [
-        "color1",
-        "https://lalalime-similar.s3-us-west-1.amazonaws.com/tanktops/Run+Off-Route+Tank/Black/1.jpg",
-        "https://lalalime-similar.s3-us-west-1.amazonaws.com/tanktops/Run+Off-Route+Tank/Black/3.jpg",
-        "https://lalalime-similar.s3-us-west-1.amazonaws.com/tanktops/Run+Off-Route+Tank/Black/2.jpg"
+        'color1',
+        'https://lalalime-similar.s3-us-west-1.amazonaws.com/tanktops/Run+Off-Route+Tank/Black/1.jpg',
+        'https://lalalime-similar.s3-us-west-1.amazonaws.com/tanktops/Run+Off-Route+Tank/Black/3.jpg',
+        'https://lalalime-similar.s3-us-west-1.amazonaws.com/tanktops/Run+Off-Route+Tank/Black/2.jpg'
       ]
     ],
     [
       [
-        "color1",
-        "https://lalalime-similar.s3-us-west-1.amazonaws.com/tanktops/Ebb+To+Street+Tank+II/Black/1.jpg",
-        "https://lalalime-similar.s3-us-west-1.amazonaws.com/tanktops/Ebb+To+Street+Tank+II/Black/3.jpg",
-        "https://lalalime-similar.s3-us-west-1.amazonaws.com/tanktops/Ebb+To+Street+Tank+II/Black/2.jpg"
+        'color1',
+        'https://lalalime-similar.s3-us-west-1.amazonaws.com/tanktops/Ebb+To+Street+Tank+II/Black/1.jpg',
+        'https://lalalime-similar.s3-us-west-1.amazonaws.com/tanktops/Ebb+To+Street+Tank+II/Black/3.jpg',
+        'https://lalalime-similar.s3-us-west-1.amazonaws.com/tanktops/Ebb+To+Street+Tank+II/Black/2.jpg'
       ]
     ],
     [
       [
-        "color1",
-        "https://lalalime-similar.s3-us-west-1.amazonaws.com/tanktops/Sculpt+Tank+II/Black/1.jpg",
-        "https://lalalime-similar.s3-us-west-1.amazonaws.com/tanktops/Sculpt+Tank+II/Black/3.jpg",
-        "https://lalalime-similar.s3-us-west-1.amazonaws.com/tanktops/Sculpt+Tank+II/Black/2.jpg"
+        'color1',
+        'https://lalalime-similar.s3-us-west-1.amazonaws.com/tanktops/Sculpt+Tank+II/Black/1.jpg',
+        'https://lalalime-similar.s3-us-west-1.amazonaws.com/tanktops/Sculpt+Tank+II/Black/3.jpg',
+        'https://lalalime-similar.s3-us-west-1.amazonaws.com/tanktops/Sculpt+Tank+II/Black/2.jpg'
       ]
     ],
   ];
@@ -121,34 +121,34 @@ const createSweaters = (name, id) => {
   product.img = [
     [
       [
-        "color1",
-        "https://lalalime-similar.s3-us-west-1.amazonaws.com/sweaters/Scuba+Hoodie/Arctic+Plum/1.jpg",
-        "https://lalalime-similar.s3-us-west-1.amazonaws.com/sweaters/Scuba+Hoodie/Arctic+Plum/3.jpg",
-        "https://lalalime-similar.s3-us-west-1.amazonaws.com/sweaters/Scuba+Hoodie/Arctic+Plum/2.jpg"
+        'color1',
+        'https://lalalime-similar.s3-us-west-1.amazonaws.com/sweaters/Scuba+Hoodie/Arctic+Plum/1.jpg',
+        'https://lalalime-similar.s3-us-west-1.amazonaws.com/sweaters/Scuba+Hoodie/Arctic+Plum/3.jpg',
+        'https://lalalime-similar.s3-us-west-1.amazonaws.com/sweaters/Scuba+Hoodie/Arctic+Plum/2.jpg'
       ]
     ],
     [
       [
-        "color1",
-        "https://lalalime-similar.s3-us-west-1.amazonaws.com/sweaters/Sit+In+Lotus+Wrap+II/Angel+Wing/1.jpg",
-        "https://lalalime-similar.s3-us-west-1.amazonaws.com/sweaters/Sit+In+Lotus+Wrap+II/Angel+Wing/3.jpg",
-        "https://lalalime-similar.s3-us-west-1.amazonaws.com/sweaters/Sit+In+Lotus+Wrap+II/Angel+Wing/2.jpg"
+        'color1',
+        'https://lalalime-similar.s3-us-west-1.amazonaws.com/sweaters/Sit+In+Lotus+Wrap+II/Angel+Wing/1.jpg',
+        'https://lalalime-similar.s3-us-west-1.amazonaws.com/sweaters/Sit+In+Lotus+Wrap+II/Angel+Wing/3.jpg',
+        'https://lalalime-similar.s3-us-west-1.amazonaws.com/sweaters/Sit+In+Lotus+Wrap+II/Angel+Wing/2.jpg'
       ]
     ],
     [
       [
-        "color1",
-        "https://lalalime-similar.s3-us-west-1.amazonaws.com/sweaters/Scuba/Heathered+Night+Diver/1.jpg",
-        "https://lalalime-similar.s3-us-west-1.amazonaws.com/sweaters/Scuba/Heathered+Night+Diver/3.jpg",
-        "https://lalalime-similar.s3-us-west-1.amazonaws.com/sweaters/Scuba/Heathered+Night+Diver/2.jpg"
+        'color1',
+        'https://lalalime-similar.s3-us-west-1.amazonaws.com/sweaters/Scuba/Heathered+Night+Diver/1.jpg',
+        'https://lalalime-similar.s3-us-west-1.amazonaws.com/sweaters/Scuba/Heathered+Night+Diver/3.jpg',
+        'https://lalalime-similar.s3-us-west-1.amazonaws.com/sweaters/Scuba/Heathered+Night+Diver/2.jpg'
       ]
     ],
     [
       [
-        "color1",
-        "https://lalalime-similar.s3-us-west-1.amazonaws.com/sweaters/Scuba+Hoodie/Arctic+Plum/1.jpg",
-        "https://lalalime-similar.s3-us-west-1.amazonaws.com/sweaters/Scuba+Hoodie/Arctic+Plum/3.jpg",
-        "https://lalalime-similar.s3-us-west-1.amazonaws.com/sweaters/Scuba+Hoodie/Arctic+Plum/2.jpg"
+        'color1',
+        'https://lalalime-similar.s3-us-west-1.amazonaws.com/sweaters/Scuba+Hoodie/Arctic+Plum/1.jpg',
+        'https://lalalime-similar.s3-us-west-1.amazonaws.com/sweaters/Scuba+Hoodie/Arctic+Plum/3.jpg',
+        'https://lalalime-similar.s3-us-west-1.amazonaws.com/sweaters/Scuba+Hoodie/Arctic+Plum/2.jpg'
       ]
     ],
   ];
@@ -166,34 +166,34 @@ const createSkirts = (name, id) => {
   product.img = [
     [
       [
-        "color1",
-        "https://lalalime-similar.s3-us-west-1.amazonaws.com/skirts/On+the+Fly+Skirt/Cherry+Cola/1.jpg",
-        "https://lalalime-similar.s3-us-west-1.amazonaws.com/skirts/On+the+Fly+Skirt/Cherry+Cola/3.jpg",
-        "https://lalalime-similar.s3-us-west-1.amazonaws.com/skirts/On+the+Fly+Skirt/Cherry+Cola/2.jpg"
+        'color1',
+        'https://lalalime-similar.s3-us-west-1.amazonaws.com/skirts/On+the+Fly+Skirt/Cherry+Cola/1.jpg',
+        'https://lalalime-similar.s3-us-west-1.amazonaws.com/skirts/On+the+Fly+Skirt/Cherry+Cola/3.jpg',
+        'https://lalalime-similar.s3-us-west-1.amazonaws.com/skirts/On+the+Fly+Skirt/Cherry+Cola/2.jpg'
       ]
     ],
     [
       [
-        "color1",
-        "https://lalalime-similar.s3-us-west-1.amazonaws.com/skirts/Pace+Rival+Skirt+(Tall)/White/1.jpg",
-        "https://lalalime-similar.s3-us-west-1.amazonaws.com/skirts/Pace+Rival+Skirt+(Tall)/White/2.jpg",
-        "https://lalalime-similar.s3-us-west-1.amazonaws.com/skirts/Pace+Rival+Skirt+(Tall)/White/3.jpg"
+        'color1',
+        'https://lalalime-similar.s3-us-west-1.amazonaws.com/skirts/Pace+Rival+Skirt+(Tall)/White/1.jpg',
+        'https://lalalime-similar.s3-us-west-1.amazonaws.com/skirts/Pace+Rival+Skirt+(Tall)/White/2.jpg',
+        'https://lalalime-similar.s3-us-west-1.amazonaws.com/skirts/Pace+Rival+Skirt+(Tall)/White/3.jpg'
       ]
     ],
     [
       [
-        "color1",
-        "https://lalalime-similar.s3-us-west-1.amazonaws.com/skirts/On+the+Fly+Skirt/Merlot/1.jpg",
-        "https://lalalime-similar.s3-us-west-1.amazonaws.com/skirts/On+the+Fly+Skirt/Merlot/3.jpg",
-        "https://lalalime-similar.s3-us-west-1.amazonaws.com/skirts/On+the+Fly+Skirt/Merlot/2.jpg"
+        'color1',
+        'https://lalalime-similar.s3-us-west-1.amazonaws.com/skirts/On+the+Fly+Skirt/Merlot/1.jpg',
+        'https://lalalime-similar.s3-us-west-1.amazonaws.com/skirts/On+the+Fly+Skirt/Merlot/3.jpg',
+        'https://lalalime-similar.s3-us-west-1.amazonaws.com/skirts/On+the+Fly+Skirt/Merlot/2.jpg'
       ]
     ],
     [
       [
-        "color1",
-        "https://lalalime-similar.s3-us-west-1.amazonaws.com/skirts/Pace+Rival+Skirt+(Tall)/Black/1.jpg",
-        "https://lalalime-similar.s3-us-west-1.amazonaws.com/skirts/Pace+Rival+Skirt+(Tall)/Black/2.jpg",
-        "https://lalalime-similar.s3-us-west-1.amazonaws.com/skirts/Pace+Rival+Skirt+(Tall)/Black/3.jpg"
+        'color1',
+        'https://lalalime-similar.s3-us-west-1.amazonaws.com/skirts/Pace+Rival+Skirt+(Tall)/Black/1.jpg',
+        'https://lalalime-similar.s3-us-west-1.amazonaws.com/skirts/Pace+Rival+Skirt+(Tall)/Black/2.jpg',
+        'https://lalalime-similar.s3-us-west-1.amazonaws.com/skirts/Pace+Rival+Skirt+(Tall)/Black/3.jpg'
       ]
     ],
   ];
@@ -211,34 +211,34 @@ const createShorts = (name, id) => {
   product.img = [
     [
       [
-        "color1",
-        "https://lalalime-similar.s3-us-west-1.amazonaws.com/shorts/In+Movement+Short+2.5/Black/1.jpg",
-        "https://lalalime-similar.s3-us-west-1.amazonaws.com/shorts/In+Movement+Short+2.5/Black/3.jpg",
-        "https://lalalime-similar.s3-us-west-1.amazonaws.com/shorts/In+Movement+Short+2.5/Black/2.jpg"
+        'color1',
+        'https://lalalime-similar.s3-us-west-1.amazonaws.com/shorts/In+Movement+Short+2.5/Black/1.jpg',
+        'https://lalalime-similar.s3-us-west-1.amazonaws.com/shorts/In+Movement+Short+2.5/Black/3.jpg',
+        'https://lalalime-similar.s3-us-west-1.amazonaws.com/shorts/In+Movement+Short+2.5/Black/2.jpg'
       ]
     ],
     [
       [
-        "color1",
-        "https://lalalime-similar.s3-us-west-1.amazonaws.com/shorts/Hotty+Hot+Short+II+2.5/Amber+Aura/1.jpg",
-        "https://lalalime-similar.s3-us-west-1.amazonaws.com/shorts/Hotty+Hot+Short+II+2.5/Amber+Aura/3.jpg",
-        "https://lalalime-similar.s3-us-west-1.amazonaws.com/shorts/Hotty+Hot+Short+II+2.5/Amber+Aura/2.jpg"
+        'color1',
+        'https://lalalime-similar.s3-us-west-1.amazonaws.com/shorts/Hotty+Hot+Short+II+2.5/Amber+Aura/1.jpg',
+        'https://lalalime-similar.s3-us-west-1.amazonaws.com/shorts/Hotty+Hot+Short+II+2.5/Amber+Aura/3.jpg',
+        'https://lalalime-similar.s3-us-west-1.amazonaws.com/shorts/Hotty+Hot+Short+II+2.5/Amber+Aura/2.jpg'
       ]
     ],
     [
       [
-        "color1",
-        "https://lalalime-similar.s3-us-west-1.amazonaws.com/shorts/Speed+Up+Short+Long+4+updated+fit/Aquatic+Green/1.jpg",
-        "https://lalalime-similar.s3-us-west-1.amazonaws.com/shorts/Speed+Up+Short+Long+4+updated+fit/Aquatic+Green/3.jpg",
-        "https://lalalime-similar.s3-us-west-1.amazonaws.com/shorts/Speed+Up+Short+Long+4+updated+fit/Aquatic+Green/2.jpg"
+        'color1',
+        'https://lalalime-similar.s3-us-west-1.amazonaws.com/shorts/Speed+Up+Short+Long+4+updated+fit/Aquatic+Green/1.jpg',
+        'https://lalalime-similar.s3-us-west-1.amazonaws.com/shorts/Speed+Up+Short+Long+4+updated+fit/Aquatic+Green/3.jpg',
+        'https://lalalime-similar.s3-us-west-1.amazonaws.com/shorts/Speed+Up+Short+Long+4+updated+fit/Aquatic+Green/2.jpg'
       ]
     ],
     [
       [
-        "color1",
-        "https://lalalime-similar.s3-us-west-1.amazonaws.com/shorts/TrackerShortV4/Frosted+Mulberry/1.jpg",
-        "https://lalalime-similar.s3-us-west-1.amazonaws.com/shorts/TrackerShortV4/Frosted+Mulberry/3.jpg",
-        "https://lalalime-similar.s3-us-west-1.amazonaws.com/shorts/TrackerShortV4/Frosted+Mulberry/2.jpg"
+        'color1',
+        'https://lalalime-similar.s3-us-west-1.amazonaws.com/shorts/TrackerShortV4/Frosted+Mulberry/1.jpg',
+        'https://lalalime-similar.s3-us-west-1.amazonaws.com/shorts/TrackerShortV4/Frosted+Mulberry/3.jpg',
+        'https://lalalime-similar.s3-us-west-1.amazonaws.com/shorts/TrackerShortV4/Frosted+Mulberry/2.jpg'
       ]
     ],
   ];
@@ -256,34 +256,34 @@ const createPants = (name, id) => {
   product.img = [
     [
       [
-        "color1",
-        "https://lalalime-similar.s3-us-west-1.amazonaws.com/pants/Align+Pant+II+25/Aquatic+Green/1.jpg",
-        "https://lalalime-similar.s3-us-west-1.amazonaws.com/pants/Align+Pant+II+25/Aquatic+Green/3.jpg",
-        "https://lalalime-similar.s3-us-west-1.amazonaws.com/pants/Align+Pant+II+25/Aquatic+Green/2.jpg"
+        'color1',
+        'https://lalalime-similar.s3-us-west-1.amazonaws.com/pants/Align+Pant+II+25/Aquatic+Green/1.jpg',
+        'https://lalalime-similar.s3-us-west-1.amazonaws.com/pants/Align+Pant+II+25/Aquatic+Green/3.jpg',
+        'https://lalalime-similar.s3-us-west-1.amazonaws.com/pants/Align+Pant+II+25/Aquatic+Green/2.jpg'
       ]
     ],
     [
       [
-        "color1",
-        "https://lalalime-similar.s3-us-west-1.amazonaws.com/pants/Free-pants/Black/1.jpg",
-        "https://lalalime-similar.s3-us-west-1.amazonaws.com/pants/Free-pants/Black/3.jpg",
-        "https://lalalime-similar.s3-us-west-1.amazonaws.com/pants/Free-pants/Black/2.jpg"
+        'color1',
+        'https://lalalime-similar.s3-us-west-1.amazonaws.com/pants/Free-pants/Black/1.jpg',
+        'https://lalalime-similar.s3-us-west-1.amazonaws.com/pants/Free-pants/Black/3.jpg',
+        'https://lalalime-similar.s3-us-west-1.amazonaws.com/pants/Free-pants/Black/2.jpg'
       ]
     ],
     [
       [
-        "color1",
-        "https://lalalime-similar.s3-us-west-1.amazonaws.com/pants/In+Movement+Tight+25+Everlux/Everglades/1.jpg",
-        "https://lalalime-similar.s3-us-west-1.amazonaws.com/pants/In+Movement+Tight+25+Everlux/Everglades/3.jpg",
-        "https://lalalime-similar.s3-us-west-1.amazonaws.com/pants/In+Movement+Tight+25+Everlux/Everglades/2.jpg"
+        'color1',
+        'https://lalalime-similar.s3-us-west-1.amazonaws.com/pants/In+Movement+Tight+25+Everlux/Everglades/1.jpg',
+        'https://lalalime-similar.s3-us-west-1.amazonaws.com/pants/In+Movement+Tight+25+Everlux/Everglades/3.jpg',
+        'https://lalalime-similar.s3-us-west-1.amazonaws.com/pants/In+Movement+Tight+25+Everlux/Everglades/2.jpg'
       ]
     ],
     [
       [
-        "color1",
-        "https://lalalime-similar.s3-us-west-1.amazonaws.com/pants/Wunder+Under+High-Rise+Tight+25+Full-On+Luxtreme/Black/1.jpg",
-        "https://lalalime-similar.s3-us-west-1.amazonaws.com/pants/Wunder+Under+High-Rise+Tight+25+Full-On+Luxtreme/Black/3.jpg",
-        "https://lalalime-similar.s3-us-west-1.amazonaws.com/pants/Wunder+Under+High-Rise+Tight+25+Full-On+Luxtreme/Black/2.jpg"
+        'color1',
+        'https://lalalime-similar.s3-us-west-1.amazonaws.com/pants/Wunder+Under+High-Rise+Tight+25+Full-On+Luxtreme/Black/1.jpg',
+        'https://lalalime-similar.s3-us-west-1.amazonaws.com/pants/Wunder+Under+High-Rise+Tight+25+Full-On+Luxtreme/Black/3.jpg',
+        'https://lalalime-similar.s3-us-west-1.amazonaws.com/pants/Wunder+Under+High-Rise+Tight+25+Full-On+Luxtreme/Black/2.jpg'
       ]
     ]
   ];
@@ -352,18 +352,22 @@ const combineProducts = () => {
 // writeStream.end();
 
 //create csv file
-let writeStream = fs.createWriteStream('test1.csv');
+let writeStream = fs.createWriteStream('test2.csv');
 let counterPostGres = 0;
 
 let subStringValuesFunction = (array) => {
   let substring = '';
+  let stringified = '';
   let values = Object.values(array);
   for (var k = 0; k < values.length; k++){
   //loop through each values and check if type is an object, if object it will stringify
     if (typeof(values[k]) === 'object' && k !== values.length - 1){
-      substring += JSON.stringify(values[k]) + '|';
+      stringified = JSON.stringify(values[k])
+      substring += '{' +stringified.substring(1, stringified.length- 1) + '}|';
     } else if (k === values.length - 1){
-      substring += JSON.stringify(values[k]);
+      stringified = JSON.stringify(values[k])
+      // stringified.replace(/\[/g, '{').replace(/]/g, '}')
+      substring += stringified.replace(/\[/g, '{').replace(/]/g, '}');
     } else {
       substring += values[k] + '|';
     }         

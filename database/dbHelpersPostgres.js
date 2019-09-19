@@ -1,8 +1,15 @@
-const Lalalime = require('./indexPostgres.js');
+const { Lalalime, sequelize } = require('./indexPostgres.js');
 
 const dbHelpers = {
   getProducts: () => {
-    return Lalalime.findAll()
+    // return Lalalime.findAll({ 
+    //   // where: {
+    //   //   property: 'bottom'
+    //   // }, { 
+    //     limit: 25 
+    //   // }
+    // })
+    return sequelize.query("select * from lalalimes where property='bottom' limit 100")
   },
   getOneProduct: (id) => {
     return Lalalime.findAll({

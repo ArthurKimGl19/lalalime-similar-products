@@ -29,13 +29,13 @@ const Lalalime = sequelize.define('lalalime', {
     type: Sequelize.STRING(15)
   },
   title: {
-    type: Sequelize.STRING(90)
+    type: Sequelize.ARRAY(Sequelize.STRING(90))
   },
   price: {
-    type: Sequelize.STRING(70)
+    type: Sequelize.ARRAY(Sequelize.STRING(70))
   },
   img: {
-    type: Sequelize.STRING(1500)
+    type: Sequelize.ARRAY(Sequelize.ARRAY(Sequelize.ARRAY(Sequelize.STRING(1500))))
   }
 },
   {
@@ -50,4 +50,4 @@ Lalalime.sync({ force: false })
   console.log('db sync failed', err)
 })
 
-module.exports = Lalalime;
+module.exports = { Lalalime, sequelize };

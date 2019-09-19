@@ -22,13 +22,15 @@ class App extends Component {
 
   getComponents() {
     axios
-    .get('/api/similar_products')
+    .get('/api/similar_products/getAll')
     .then((res) => {
       let idx = Math.floor(Math.random() * 60)
+      console.log('what is idx', idx)
+      console.log('what is res title', res.data[0][1])
       this.setState({
-      title: res.data[idx]['title'],
-      price: res.data[idx]['price'],
-      img: res.data[idx]['img']
+      title: res.data[0][1]['title'],
+      price: res.data[0][1]['price'],
+      img: res.data[0][1]['img']
     }, () => console.log('title', res.data[idx]))})
     .catch((err) => console.log('title',err))
   }
