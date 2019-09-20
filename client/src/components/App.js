@@ -21,16 +21,33 @@ class App extends Component {
   }
 
   getComponents() {
+    //mongo
+    // axios
+    // .get('/api/similar_products/getAll')
+    // .then((res) => {
+    //   let idx = Math.floor(Math.random() * 50)
+    //   console.log('what is idx', idx)
+    //   console.log('what is res.data', res.data[0])
+    //   console.log('what is res title', res.data[0]['title'])
+    //   this.setState({
+    //   title: res.data[0]['title'],
+    //   price: res.data[0]['price'],
+    //   img: res.data[0]['img']
+    // }, () => console.log('title', res.data[idx]))})
+    // .catch((err) => console.log('title',err))
+
+    //postgresql
     axios
     .get('/api/similar_products/getAll')
     .then((res) => {
-      let idx = Math.floor(Math.random() * 60)
+      let idx = Math.floor(Math.random() * 50)
       console.log('what is idx', idx)
-      console.log('what is res title', res.data[0][1])
+      console.log('what is res.data', res.data[0])
+      console.log('what is res title', res.data[0][0]['title'])
       this.setState({
-      title: res.data[0][1]['title'],
-      price: res.data[0][1]['price'],
-      img: res.data[0][1]['img']
+      title: res.data[0][0]['title'],
+      price: res.data[0][0]['price'],
+      img: res.data[0][0]['img']
     }, () => console.log('title', res.data[idx]))})
     .catch((err) => console.log('title',err))
   }

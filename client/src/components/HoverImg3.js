@@ -36,7 +36,7 @@ const HoverImg3 = ({pic3, swatch3, img3Index, onMouseOver, i3, onMouseMain3, onM
           />
           <img
             className="swatchImg hoverbox2 img3"
-            src={swatch3[1].slice(1, 2)}
+            src={swatch3[0].slice(1, 2)}
             alt="swatch Image"
             name="1"
             id="img3"
@@ -44,7 +44,7 @@ const HoverImg3 = ({pic3, swatch3, img3Index, onMouseOver, i3, onMouseMain3, onM
           />
           <img
             className="swatchImg hoverbox3 img3"
-            src={swatch3[2].slice(1, 2)}
+            src={swatch3[0].slice(1, 2)}
             alt="swatch Image"
             name="2"
             id="img3"
@@ -52,7 +52,7 @@ const HoverImg3 = ({pic3, swatch3, img3Index, onMouseOver, i3, onMouseMain3, onM
           />
           <img
             className="swatchImg hoverbox4 img3"
-            src={swatch3[3].slice(1, 2)}
+            src={swatch3[0].slice(1, 2)}
             alt="swatch Image"
             name="3"
             id="img3"
@@ -60,7 +60,7 @@ const HoverImg3 = ({pic3, swatch3, img3Index, onMouseOver, i3, onMouseMain3, onM
           />
           <img
             className="swatchImg hoverbox5 img3"
-            src={swatch3[4].slice(1, 2)}
+            src={swatch3[0].slice(1, 2)}
             alt="swatch Image"
             name="4"
             id="img3"

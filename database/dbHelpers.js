@@ -2,7 +2,7 @@ const LalaLime = require('./index.js');
 
 
 const getProducts = () => {
-  return LalaLime.find({property:'bottom'});
+  return LalaLime.find({property:'bottom'}).limit(50);
 }
 const getOneProduct = (id) => {
   return LalaLime.findOne({id})
