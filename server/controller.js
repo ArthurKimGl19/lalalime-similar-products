@@ -10,8 +10,11 @@ deleteOneProduct }
 const controller = {
   getAll: (req, res) => {
     getProducts()
-    .then((data) => res.status(200).send(data))
-    .catch((err) => res.status(400).send(err))
+    .then((data) => res.status(200).send(data.rows))
+    .catch((err) =>  res.status(400).send(err))
+    //with sequelize
+    // .then((data) => res.status(200).send(data))
+    // .catch((err) => res.status(400).send(err))
   },
   getOne: (req, res) => {
     let { id } = req.params;
