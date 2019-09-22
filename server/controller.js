@@ -12,14 +12,11 @@ const controller = {
     getProducts()
     .then((data) => res.status(200).send(data.rows))
     .catch((err) =>  res.status(400).send(err))
-    //with sequelize
-    // .then((data) => res.status(200).send(data))
-    // .catch((err) => res.status(400).send(err))
   },
   getOne: (req, res) => {
     let { id } = req.params;
     getOneProduct(id)
-    .then((data) => res.status(200).send(data))
+    .then((data) => res.status(200).send(data.rows[0]))
     .catch((err) => res.status(400).send(err))
   },
   postOne: (req, res) => {

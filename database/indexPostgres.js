@@ -1,5 +1,4 @@
-const { Pool, Client } = require('pg');
-// const connectionString = 'postgres://newuser:pw@localhost:5432/products'
+const { Pool } = require('pg');
 
 const pool = new Pool ({
   user: 'newuser',
@@ -10,20 +9,6 @@ const pool = new Pool ({
   idleTimeoutMillis: 3000,
   connectinTimeOutMillis: 2000,
 })
-
-// const client = new Client({
-//   connectionString: connectionString,
-// })
-// client.connect()
-
-// pool.on('connect', () => {
-//   console.log('connected to the postgres database')
-// })
-// const Ids = `CREATE TABLE IF NOT EXISTS 
-//       ids(
-//         id SERIAL PRIMARY KEY,
-//         products VARCHAR(25)
-//       )`
 
 const Lalalime = `CREATE TABLE IF NOT EXISTS
       lalalimes(
@@ -42,14 +27,6 @@ pool.query(Lalalime)
   .catch((err) => {
     console.log(err);
   })
-  // pool.query(Ids)
-  // .then((res) => {
-  //   console.log('Created table Id');
-  // })
-  // .catch((err) => {
-  //   console.log(err);
-  // })
-  // pool.end();
   module.exports = pool;
 
 
