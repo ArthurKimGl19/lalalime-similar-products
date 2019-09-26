@@ -1,13 +1,14 @@
 const { Pool } = require('pg');
 
 const pool = new Pool ({
-  user: 'newuser',
-  host: 'localhost',
+  user: 'ubuntu',
+  host: 'ec2-18-221-125-251.us-east-2.compute.amazonaws.com',
   database: 'products',
   password: 'pw',
+  port: 5432,
   max: 15,
   idleTimeoutMillis: 3000,
-  connectinTimeOutMillis: 2000,
+  connectionTimeOutMillis: 2000,
 })
 
 const Lalalime = `CREATE TABLE IF NOT EXISTS
