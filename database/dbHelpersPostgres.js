@@ -30,12 +30,12 @@ let singleArrayFormatter = (array) => {
 
 // raw postgresql
 const dbHelpers = {
-  getProducts: () => {
+  getProducts: (id) => {
     let random = getRandomArbitrary(1, 1434)
-    let floor = Math.floor(random * 6999);
-
-    return pool.query(`select * from lalalimes where id between ${floor} and ${floor+6999} limit 10`);
-  },
+    if (id >= 1 && id <= 1434){
+      let floor = Math.floor(id * 6999);
+      return pool.query(`select * from lalalimes where id between ${floor} and ${floor+6999} limit 10`);
+    },
   getOneProduct: (id) => {
     return pool.query(`select * from lalalimes where id=${id}`)
   },

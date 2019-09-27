@@ -4,7 +4,7 @@ const router = express.Router();
 
 
 router
-  .route('/similar_products/getAll')
+  .route('/similar_products/getAll/:id')
   .get(controller.getAll)
 
 router

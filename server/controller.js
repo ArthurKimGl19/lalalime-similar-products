@@ -9,7 +9,8 @@ deleteOneProduct }
 
 const controller = {
   getAll: (req, res) => {
-    getProducts()
+    let { id } = req.params;
+    getProducts(id)
     .then((data) => res.status(200).send(data.rows))
     .catch((err) =>  res.status(400).send(err))
   },
