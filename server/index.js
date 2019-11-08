@@ -13,8 +13,8 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, '../client/dist')));
 app.use('/api', router);
 
-app.use('loaderio-0d8974336037cfc2861e7d9cd78ef7c2', (req, res)=> {
-	res.send('loaderio-0d8974336037cfc2861e7d9cd78ef7c2/');
+app.use('loaderio-c55906015f51b267d66dd987bdab08fa/', (req, res)=> {
+	res.send('loaderio-c55906015f51b267d66dd987bdab08fa/');
 });
 
 app.listen(port, () => console.log(`Listening on port ${port}!`))
