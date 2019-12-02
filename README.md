@@ -18,7 +18,23 @@
 
 ## Usage
 
-> Some usage instructions
+# Start Mongodb
+> In database/mongoDB/index.js:
+Update user, host, database, password
+
+> From within the root directory:
+npm run startMongo
+npm run seedMongo
+npm run build
+
+# Start PostgreSQL
+> In database/postgreSQL/index.js:
+Update user, host, database, password
+
+> From within the root directory:
+npm run startMongo
+npm run seedMongo
+npm run build
 
 ## Requirements
 
@@ -34,7 +50,6 @@ An `nvmrc` file is included if using [nvm](https://github.com/creationix/nvm).
 From within the root directory:
 
 ```sh
-npm install -g webpack
 npm install
 ```
 
