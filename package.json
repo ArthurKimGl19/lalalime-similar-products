@@ -8,16 +8,20 @@
     "node": ">=6.13.0"
   },
   "scripts": {
-    "start": "nodemon server/index.js",
+    "startMongo": "nodemon server/mongoDB_server/index.js",
+    "startPostgres": "nodemon server/postgreSQL_server/index.js",
     "build": "webpack -d --watch",
-    "seed": "node --max-old-space-size=6144 database/seeder.js"
+    "seedMongo": "node --max-old-space-size=6144 database/mongoDB/seeder.js",
+    "seedPostgres": "node --max-old-space-size=6144 database/postgreSQL/seeder.js"
   },
   "dependencies": {
-    "artillery": "^1.6.0-28",
+    "artillery": "^1.6.0-29",
     "axios": "^0.19.0",
     "body-parser": "^1.19.0",
     "css-loader": "^3.2.0",
+    "elasticdump": "^6.15.7",
     "express": "^4.17.1",
+    "mongo-connector": "0.0.2",
     "mongodb": "^3.3.0",
     "mongoose": "^5.6.10",
     "morgan": "^1.9.1",

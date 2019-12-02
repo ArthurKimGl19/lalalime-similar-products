@@ -5,8 +5,7 @@ postOneProduct,
 updateOneProduct,
 deleteOneProduct } 
 // = require('../database/dbHelpersPostgres.js');
-= require('../database/dbHelpers.js');
-const Lalalime = require('../database/index.js');
+= require('../../database/mongoDB/dbHelpers.js');
 
 //mongo
 const controller = {

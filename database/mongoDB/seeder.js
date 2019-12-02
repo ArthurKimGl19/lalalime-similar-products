@@ -325,104 +325,54 @@ const combineProducts = () => {
   return [...bottData, ...topData];
 }
 
-
-//create csv file
-//1st portion of 10M
-let writeStream = fs.createWriteStream('test1.csv');
-let counterPostGres = 0;
-
-let subStringValuesFunction = (array) => {
-  let substring = '';
-  let stringified = '';
-  let values = Object.values(array);
-  for (var k = 0; k < values.length; k++){
-  //loop through each values and check if type is an object, if object it will stringify
-    if (typeof(values[k]) === 'object' && k !== values.length - 1){
-      stringified = JSON.stringify(values[k])
-      substring += '{' +stringified.substring(1, stringified.length- 1) + '}|';
-    } else if (k === values.length - 1){
-      stringified = JSON.stringify(values[k])
-      // stringified.replace(/\[/g, '{').replace(/]/g, '}')
-      substring += stringified.replace(/\[/g, '{').replace(/]/g, '}');
-    } else {
-      substring += values[k] + '|';
-    }         
-  }
-  return substring;
-}
-
-for (var i = 0; i < 239; i++) {
+//creates json file
+let writeStream = fs.createWriteStream('test1.json')
+//238
+//last i === 237 && j === array.length -1
+for (var i = 0; i < 237; i++){
   var data;
   let array = combineProducts();
-  let keys;
-  //grab all keys from the very first object
-  //make into string and make into data
-  for (var j = 0; j < array.length; j++) {
-    if (array[j]) {
-      if (counterPostGres === 0){
-        keys = Object.keys(array[0])
-        data = keys.join(',').replace(/,/g,'|') + '\n' + subStringValuesFunction(array[0]) + '\n';
-        counterPostGres++;
-      } else if (i === 238 && j === array.length - 1) {
-        data = subStringValuesFunction(array[j])
+  for (var j = 0; j < array.length; j++){
+    if (array[j]){
+      if (i === 236 && j === array.length - 1){
+        data = JSON.stringify(array[j]) +']';
+      } else if (i === 0 && j === 0){
+        data = '[' + JSON.stringify(array[j]) + ',\n';
       } else {
-        data = subStringValuesFunction(array[j]) + '\n';
+        data = JSON.stringify(array[j]) + ',\n';
       }
     }
     writeStream.write(data, 'utf8')
-    data = '';
+    data='';
   }
 }
-//2nd portion of 10M
-// let writeStream = fs.createWriteStream('test2.csv');
-// let counterPostGres = 0;
-
-// let subStringValuesFunction = (array) => {
-//   let substring = '';
-//   let stringified = '';
-//   let values = Object.values(array);
-//   for (var k = 0; k < values.length; k++){
-//   //loop through each values and check if type is an object, if object it will stringify
-//     if (typeof(values[k]) === 'object' && k !== values.length - 1){
-//       stringified = JSON.stringify(values[k])
-//       substring += '{' +stringified.substring(1, stringified.length- 1) + '}|';
-//     } else if (k === values.length - 1){
-//       stringified = JSON.stringify(values[k])
-//       // stringified.replace(/\[/g, '{').replace(/]/g, '}')
-//       substring += stringified.replace(/\[/g, '{').replace(/]/g, '}');
-//     } else {
-//       substring += values[k] + '|';
-//     }         
-//   }
-//   return substring;
-// }
-
-// for (var i = 0; i < 239; i++) {
-//   var data;
-//   let array = combineProducts();
-//   let keys;
-//   //grab all keys from the very first object
-//   //make into string and make into data
-//   for (var j = 0; j < array.length; j++) {
-//     if (array[j]) {
-//       if (counterPostGres === 0){
-//         keys = Object.keys(array[0])
-//         data = keys.join(',').replace(/,/g,'|') + '\n' + subStringValuesFunction(array[0]) + '\n';
-//         counterPostGres++;
-//       } else if (i === 238 && j === array.length - 1) {
-//         data = subStringValuesFunction(array[j])
-//       } else {
-//         data = subStringValuesFunction(array[j]) + '\n';
-//       }
-//     }
-//     writeStream.write(data, 'utf8')
-//     data = '';
-//   }
-// }
-
 writeStream.on('finish', () => {
   console.log('wrote all data to file');
 });
 writeStream.end();
 
-
+// //2nd portion of 10M of database
+// let writeStream = fs.createWriteStream('test2.json')
+// //238
+// //last i === 237 && j === array.length -1
+// for (var i = 0; i < 237; i++){
+//   var data;
+//   let array = combineProducts();
+//   for (var j = 0; j < array.length; j++){
+//     if (array[j]){
+//       if (i === 236 && j === array.length - 1){
+//         data = JSON.stringify(array[j]) +']';
+//       } else if (i === 0 && j === 0){
+//         data = '[' + JSON.stringify(array[j]) + ',\n';
+//       } else {
+//         data = JSON.stringify(array[j]) + ',\n';
+//       }
+//     }
+//     writeStream.write(data, 'utf8')
+//     data='';
+//   }
+// }
+// writeStream.on('finish', () => {
+//   console.log('wrote all data to file');
+// });
+// writeStream.end();
