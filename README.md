@@ -37,8 +37,8 @@ npm run build
 Update user, host, database, password
 ```
 
+> From within the root directory:
 ```sh
-From within the root directory:
 npm run startMongo
 npm run seedMongo
 npm run build
