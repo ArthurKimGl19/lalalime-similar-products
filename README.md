@@ -18,23 +18,23 @@
 
 ## Usage
 
-# Start Mongodb
+### Start Mongodb
 > In database/mongoDB/index.js:
-Update user, host, database, password
+> Update user, host, database, password
 
 > From within the root directory:
-npm run startMongo
-npm run seedMongo
-npm run build
+> npm run startMongo
+> npm run seedMongo
+> npm run build
 
-# Start PostgreSQL
+### Start PostgreSQL
 > In database/postgreSQL/index.js:
 Update user, host, database, password
 
 > From within the root directory:
-npm run startMongo
-npm run seedMongo
-npm run build
+> npm run startMongo
+> npm run seedMongo
+> npm run build
 
 ## Requirements
 
