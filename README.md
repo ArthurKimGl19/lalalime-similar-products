@@ -20,21 +20,29 @@
 
 ### Start Mongodb
 > In database/mongoDB/index.js:
-> Update user, host, database, password
+```sh
+Update user, host, database, password
+```
 
 > From within the root directory:
-> npm run startMongo
-> npm run seedMongo
-> npm run build
+```sh
+npm run startMongo
+npm run seedMongo
+npm run build
+```
 
 ### Start PostgreSQL
 > In database/postgreSQL/index.js:
+```sh
 Update user, host, database, password
+```
 
-> From within the root directory:
-> npm run startMongo
-> npm run seedMongo
-> npm run build
+```sh
+From within the root directory:
+npm run startMongo
+npm run seedMongo
+npm run build
+```
 
 ## Requirements
 
