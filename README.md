@@ -1,13 +1,14 @@
-# Project Name
+# System Design for Lalalime Similar Products Component
 
-> Project description
+> Optimized and horizontally scaled back-end of Lululemon clone. Seeded 10M records into both MongoDB and PostgreSQL in under 10 minutes. Deployed, horizontally scaled micro-service using PostgreSQL to 4 EC2 instances, and used Nginx Load Balancer (Round-Robin technique) to handle a throughput of 2,000 RPS with 0.5% error rate and an average latency of 182 ms. Deployed, horizontally scaled micros-service using MongoDb to 4 EC2 instances, and used Nginx Load Balancer (Round-Robin technique) to handle a throughput of 1,300 RPS with 0.0% error rate and average latency of 72 ms. 
 
-## Related Projects
+## Inherited Component
+  - https://github.com/sdc-lululemon/lalalime-similar-products
 
-  - https://github.com/teamName/repo
-  - https://github.com/teamName/repo
-  - https://github.com/teamName/repo
-  - https://github.com/teamName/repo
+## Related Components
+
+  - https://github.com/emilyayang/lalalime-reviews
+  - https://github.com/sdc-lululemon/lalalime-navbar
 
 ## Table of Contents
 
