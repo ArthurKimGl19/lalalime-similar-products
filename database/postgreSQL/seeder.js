@@ -328,7 +328,7 @@ const combineProducts = () => {
 
 //create csv file
 //1st portion of 10M
-let writeStream = fs.createWriteStream('test1.csv');
+let writeStream = fs.createWriteStream('test1small.csv');
 let counterPostGres = 0;
 
 let subStringValuesFunction = (array) => {
